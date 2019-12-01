@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         wv.getSettings().setJavaScriptEnabled(true);
         wv.getSettings().setSupportZoom(false);
         queue = Volley.newRequestQueue(this);
-        stringRequest = new StringRequest(Request.Method.GET, "http://192.168.4.1",
+        stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.114",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        wv.loadUrl("http://192.168.4.1");
+                        wv.loadUrl("http://192.168.1.114");
                     }
                 }, new Response.ErrorListener() {
             @Override
